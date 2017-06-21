@@ -21,4 +21,4 @@ To config:
 
 ```
 
-Where EAGER will load keys when the map is created and LAZY will just load them lazily
+Where EAGER will call loadAllKeys across the network map to pre-populate the mapstore when the map is created (I can see this being heavy)  and LAZY will just load and store them lazily as they are called/put (this seems more scaleable).
